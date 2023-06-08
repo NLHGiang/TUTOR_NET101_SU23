@@ -124,8 +124,8 @@ int n = Convert.ToInt32(Console.ReadLine());
 // -> 2: khong thoa man -> Dung vong lap
 for (int i = 0; i < n; i++)
 {
-    // do something
-    Console.WriteLine(i);
+	// do something
+	Console.WriteLine(i);
 }
 
 /* LUU Y: Vong lap vo tan
@@ -140,7 +140,7 @@ for (int i = 0; ; i++)
 }
 
 // Neu dieu kien la i != 0 -> khong bi TH vong lap vo tan
-for (int i = 0; i < 1; )
+for (int i = 0; i < 1;)
 {
 	// do something
 	Console.WriteLine(i);
@@ -177,7 +177,7 @@ do
 {
 	Console.WriteLine(indexWhile);
 	indexWhile++; // buoc nhay
-} while(indexDoWhile < 5);
+} while (indexDoWhile < 5);
 
 #endregion
 

@@ -16,6 +16,7 @@ using TUTOR_NET101_SU23_B3;
 //conNguoi3.InThongTin();
 
 ConNguoi conNguoi4 = new ConNguoi(); // khoi tao doi tuong
+
 // Gan gia tri
 conNguoi4.Name = "Giang4";
 conNguoi4.PhoneNumber = "0123456789";

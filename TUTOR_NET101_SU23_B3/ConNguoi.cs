@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace TUTOR_NET101_SU23_B3
+﻿namespace TUTOR_NET101_SU23_B3
 {
 	public class ConNguoi
 	{
@@ -16,11 +12,12 @@ namespace TUTOR_NET101_SU23_B3
 		public string PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
 		public int YearOfBirth { get => _yearOfBirth; set => _yearOfBirth = value; }
 
-        // prop -> Tab
-        // Truyen vao tuoi(Age) -> NamHienTai - Tuoi(Age)
-        // <= 0 -> _yearOfBirth = 0;
-        // > 0 -> _yearOfBirth = NamHienTai - Tuoi(Age)
-        public int Age { 
+		// prop -> Tab
+		// Truyen vao tuoi(Age) -> NamHienTai - Tuoi(Age)
+		// <= 0 -> _yearOfBirth = 0;
+		// > 0 -> _yearOfBirth = NamHienTai - Tuoi(Age)
+		public int Age
+		{
 			get => DateTime.Now.Year - _yearOfBirth; // modify prop
 			set => _yearOfBirth = (DateTime.Now.Year - value < 0) ? 0 : (DateTime.Now.Year - value); // modify prop
 		}
@@ -28,7 +25,7 @@ namespace TUTOR_NET101_SU23_B3
 		// Ham tao (constructor)
 		// Constructor khong tham so ("ctor" + Tab)
 		public ConNguoi()
-        {
+		{
 			_name = "?";
 			_phoneNumber = "??";
 			_yearOfBirth = 1;
@@ -50,8 +47,8 @@ namespace TUTOR_NET101_SU23_B3
 		// Phuong thuc (Method)
 		public void Noi()
 		{
-            Console.WriteLine($"{Name} dang noi");
-        }
+			Console.WriteLine($"{Name} dang noi");
+		}
 
 		public void Hat()
 		{
@@ -60,7 +57,7 @@ namespace TUTOR_NET101_SU23_B3
 
 		public void InThongTin()
 		{
-            Console.WriteLine($"Property: {Name} - {PhoneNumber} - {YearOfBirth}");
+			Console.WriteLine($"Property: {Name} - {PhoneNumber} - {YearOfBirth}");
 			Console.WriteLine($"TT: {_name} - {_phoneNumber} - {_yearOfBirth}");
 		}
 	}
