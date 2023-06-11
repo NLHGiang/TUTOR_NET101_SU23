@@ -124,8 +124,8 @@ int n = Convert.ToInt32(Console.ReadLine());
 // -> 2: khong thoa man -> Dung vong lap
 for (int i = 0; i < n; i++)
 {
-	// do something
-	Console.WriteLine(i);
+    // do something
+    Console.WriteLine(i);
 }
 
 /* LUU Y: Vong lap vo tan
@@ -135,22 +135,22 @@ for (int i = 0; i < n; i++)
  */
 for (int i = 0; ; i++)
 {
-	// do something
-	Console.WriteLine(i);
+    // do something
+    Console.WriteLine(i);
 }
 
 // Neu dieu kien la i != 0 -> khong bi TH vong lap vo tan
 for (int i = 0; i < 1;)
 {
-	// do something
-	Console.WriteLine(i);
+    // do something
+    Console.WriteLine(i);
 }
 
 for (int i = 0; i < 1; i++)
 {
-	// do something
-	Console.WriteLine(i);
-	i = -999;
+    // do something
+    Console.WriteLine(i);
+    i = -999;
 }
 
 #endregion
@@ -162,8 +162,8 @@ int indexWhile = 0;
 // indexWhile < 5 : dieu kien CHAY
 while (indexWhile < 5)
 {
-	Console.WriteLine(indexWhile);
-	indexWhile++; // buoc nhay
+    Console.WriteLine(indexWhile);
+    indexWhile++; // buoc nhay
 }
 
 #endregion
@@ -175,8 +175,8 @@ int indexDoWhile = 0;
 // indexDoWhile < 5 : dieu kien CHAY
 do
 {
-	Console.WriteLine(indexWhile);
-	indexWhile++; // buoc nhay
+    Console.WriteLine(indexWhile);
+    indexWhile++; // buoc nhay
 } while (indexDoWhile < 5);
 
 #endregion

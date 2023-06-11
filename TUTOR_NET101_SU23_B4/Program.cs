@@ -7,7 +7,6 @@
 // Sua thong tin ConVat trong listCV
 // Xoa CV trong listCV
 
-using System.Collections.Generic;
 using TUTOR_NET101_SU23_B4;
 
 //ConVat conVat1 =  new ConVat();
@@ -34,7 +33,7 @@ listCV.Add(new ConVat());
 // Vong lap (for, foreach, while, do...while)
 for (int i = 0; i < 5; i++)
 {
-	listCV.Add(new ConVat());
+    listCV.Add(new ConVat());
 }
 
 //Console.WriteLine(listCV.Count); // 1 + 5 = 6
@@ -57,7 +56,7 @@ int viTriSua = 1000;
 listCV = new(); // new(): khai bao nhanh
 for (int i = 1; i <= 3; i++) // i=1;i=2;i=3
 {
-	listCV.Add(new ConVat());
+    listCV.Add(new ConVat());
 }
 
 Console.WriteLine(listCV.Count); // 3 pt
@@ -65,28 +64,28 @@ Console.WriteLine(listCV.Count); // 3 pt
 // Cach 1: Vong lap -> if kiem tra vi tri -> Sua
 if (listCV != null) // Dieu kien tranh ERROR TH1
 {
-	for (int i = 0; i < listCV.Count; i++) // Boi vi co dieu kien (i < listCV.Count) => tranh ERROR TH1
-	{
-		if (i == viTriSua)
-		{
-			listCV[i] = new ConVat("CV Test", 2);
-			break;
-		}
-	}
+    for (int i = 0; i < listCV.Count; i++) // Boi vi co dieu kien (i < listCV.Count) => tranh ERROR TH1
+    {
+        if (i == viTriSua)
+        {
+            listCV[i] = new ConVat("CV Test", 2);
+            break;
+        }
+    }
 }
 
 // Cach 2: Truyen truc tiep vi tri -> Sua
 if (listCV != null) // Dieu kien tranh ERROR TH1
 {
-	if (listCV.Count > viTriSua) // Dieu kien tranh ERROR TH2
-	{
-		listCV[viTriSua] = new ConVat("CV Test", 2);
-	}
+    if (listCV.Count > viTriSua) // Dieu kien tranh ERROR TH2
+    {
+        listCV[viTriSua] = new ConVat("CV Test", 2);
+    }
 }
 
 if (listCV != null && listCV.Count > viTriSua) // Dieu kien tranh ERROR TH1 & TH2
 {
-	listCV[viTriSua] = new ConVat("CV Test", 2);
+    listCV[viTriSua] = new ConVat("CV Test", 2);
 }
 
 // Xoa CV trong listCV
@@ -98,7 +97,7 @@ listCV.RemoveAt(viTriXoa);
 // Xoa nhieu
 int start = 2;
 int amount = 2;
-listCV.RemoveRange(start,amount);
+listCV.RemoveRange(start, amount);
 
 // Xoa het
 listCV.Clear();
@@ -107,11 +106,11 @@ listCV.Clear();
 // Hien thi
 for (int i = 0; i < listCV.Count; i++)
 {
-	listCV[i].InThongTin();
+    listCV[i].InThongTin();
 }
 
 // var, dynamic
 foreach (ConVat item in listCV)
 {
-	item.InThongTin();
+    item.InThongTin();
 }
